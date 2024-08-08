@@ -84,8 +84,8 @@ jobs:
 
     - name: Login to Docker hub
       env:
-        DOCKER_USER: ${{ secrets.DOCKER_USER_NAME }}
-        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASS_TOKEN }}
+        DOCKER_USER: ${{ secrets.thiluk20 }}
+        DOCKER_PASSWORD: ${{ secrets.dckr_pat_5gknZbMVJGYpu5K3GXYRjRnGIWo }}
       run: docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
 
     - name: Build the Docker image for Fastapi app
